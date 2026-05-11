@@ -173,6 +173,7 @@ setInterval(() => {
 //   console.log("Server rodando na porta 3000");
 // });
 
+socket.on("ping_client", (callback) => callback());
 server.listen(3000, "0.0.0.0", () => {
   console.log("Server rodando na porta 3000 Atualizado");
 });
